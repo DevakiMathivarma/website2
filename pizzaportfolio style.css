@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.image img {
+    width: 120px;
+    height: 120px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.contact p {
+    font-size: 17px;
+    padding:5px;
+
+}
+.contact i{
+    color:darkorange;
+   padding-right:5px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.icons i {
+    padding: 5px;
+    font-size: 20px;
+
+}
+
+.btn {
+    background-color:darkorange;
+    padding: 13px;
+    border-radius: 50px;
+    border: none;
+    transition: 1s ease-in;
+    
+}
+.btn:hover{
+    background-color: black;
+    border: darkorange;
+    color:darkorange;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    position:sticky;
+    top:0;
+    background-color: white;
+    z-index: 1000;
+    padding:10px 0;
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+    transition:background-color 0.3s ease, padding 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    display:flex;
+
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+
+
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    background-color: orange;
+    transition: 0.8s ease-in;
+
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+.sofa{
+    background-image: url("sofa.jpg");
+    width:100%;
+    height:400px;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+.sofa h1{
+    position:absolute;
+    top:50px;
+    left:500px;
+    color:black;
+    font-size: 60px;
+    text-shadow: 3px 3px 3px red;
+}
+.sofa h4{
+    position: absolute;
+    top:130px;
+    left:550px;
+    font-size: 25px;
+    text-shadow: 3px 3px 3px red;
+}
+.pizzawithjuice{
+    text-align: center;
+    margin-top: 100px;
+   width:100%;
+}
+.pizzawithjuice img{
+    width:80%;
+    height:450px;
+}
+.columnpizza{
+   
+    display: flex;
+   justify-content: space-around;
+    width:80%;
+    margin: auto;
+}
+.columnpizza1{
+    margin-top: 50px;
+}
+.portfoliocolumn{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    width:30%;
+    column-gap:30px;
+    margin-top: 50px;
+    margin-left: 30px;
+    border: 1px solid black;
+    padding:20px;
+   
+
+}
+.portfoliocolumn1{
+    margin-top: 20px;
+}
+.side{
+    display:flex;
+    justify-content: space-around;
+}
+.info{
+    width:70%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.info h3{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.info p{
+    padding:5px;
+    line-height: 25px;
+    color:grey;
+}
+.pizzainfo{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.pizzainfo1 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+.pizzainfo1 p{
+    color:grey;
+    line-height: 27px;
+}
+.graphic {
+    background-image: url("pizzagraphic.PNG");
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    margin-top: 80px;
+}
+
+.graphic h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.graphic input {
+    width: 500px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: black;
+    border: none;
+    margin-bottom: 5px;
+
+}
+
+.graphic button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: orange;
+    border-radius: 50px;
+    width: 200px;
+    font-weight: bolder;
+    border: none;
+    transition: 1s ease-in;
+}
+
+.graphic button:hover {
+    background-color: black;
+    color: darkorange;
+}
+
+.footer {
+    background-image: url("footer.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    opacity:0.8;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+
+
+
+}
+
+.text {
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    opacity:1;
+}
+
+.footer1 {
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer1 p {
+    width: 300px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.footer1 button {
+    width: 160px;
+    padding: 13px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background-color: darkorange;
+    color: black;
+    transition: 1s ease-in;
+    border: none;
+    font-weight: bold;
+
+}
+
+
+.footer1 button:hover {
+    background-color: black;
+    color: darkorange;
+}
+
+.footer2 {
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 70px;
+
+
+}
+
+.footer2 h2 {
+    font-size: 20px;
+}
+
+.footer2 img {
+    padding: 10px;
+}
+
+.footer p {
+    padding-bottom: 10px;
+}
+
+.footer3 {
+    position: absolute;
+    top: 90px;
+    right: 500px;
+}
+
+.footer {
+    position: relative;
+}
+
+.footer3 a {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer3 img {
+    padding: 10px;
+}
+
+.footer4 {
+    padding: 5px;
+    margin-top: -20px;
+}
+
+.footer4 h2 {
+    padding: 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.footer4 p {
+    padding: 10px;
+}
+
+.footer4 i {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 50px;
+    border-color: white;
+    color: darkorange;
+    transition: 1s ease-in;
+
+}
+
+.footer4 i:hover {
+    background-color: darkorange;
+    color: black;
+}
+.footer5{
+flex-basis: 100%;
+text-align: center;
+}
+.footer5 hr{
+    width:90%;
+    margin: auto;
+}
+.footer5 p{
+    float:left ;
+    margin-left: 50px;
+    padding:20px;
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .icons i {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid grey;
+        width:100%;
+      
+    }
+
+    .sofa h1 {
+        font-size: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .sofa h4 {
+        font-size: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .pizzawithjuice img {
+        width: 100%;
+    }
+
+    .columnpizza {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfoliocolumn {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .info p {
+        width: 100%;
+    }
+
+    .pizzainfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pizzainfo1 p {
+        width: 90%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .footer1, .footer2, .footer3, .footer4 {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer5 hr {
+        width: 80%;
+    }
+}
+
+
+
