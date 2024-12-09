@@ -459,6 +459,91 @@ nav ul li a:hover:after {
         margin-left: 50px;
         padding:20px;
     }
+    @media (max-width:767px){
+
+    
+    .header {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid grey;
+        width:100%;
+       /* padding:10px; */
+    }
+
+
+    .contact p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .image img {
+        width: 80px;
+        height: auto;
+    }
+
+    .icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sofa h1 {
+        font-size: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .sofa h4 {
+        font-size: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contactinput{
+        flex-direction: column;
+    }
+    .forminput{
+        width:100%;
+        text-align: center;
+    }
+    .forminput input{
+        width:400px;
+    }
+    .forminput textarea{
+        width:420px;
+    }
+    .forminput button{
+        margin: auto;
+        margin-top: 10px;
+    }
+    iframe{
+        width:100%;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .footer1, .footer2, .footer3, .footer4 {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer5 hr {
+        width: 80%;
+    }
     
    
-    
+} 

@@ -554,3 +554,101 @@ text-align: center;
     margin-left: 50px;
     padding:20px;
 }
+
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid grey;
+        width:100%;
+       /* padding:10px; */
+    }
+
+
+    .contact p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .image img {
+        width: 80px;
+        height: auto;
+    }
+
+    .icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sofa h1 {
+        font-size: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .sofa h4 {
+        font-size: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .pizzamenu{
+        display: grid;
+        grid-template-columns: repeat(2,0.5fr);
+        grid-template-rows: repeat(2,0.5fr);
+        gap:5px;
+         
+     }
+     .pizzamenu h4{
+        text-align: center;
+     }
+     .drinks{
+        display: grid;
+        grid-template-columns: repeat(2,0.5fr);
+        grid-template-rows: repeat(2,0.5fr);
+        gap:5px;
+        
+    }
+    .formsback {
+        flex-direction: column;
+        /* height: auto; */
+        padding: 20px;
+        /* background-size: 100% 1200px; */
+    }
+    .formsback1 {
+        width: 100%;
+    }
+    .order h2 {
+        background-color: black;
+        /* width: 200px;
+        height: 650px; */
+        margin-right: 70px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .footer1, .footer2, .footer3, .footer4 {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer5 hr {
+        width: 80%;
+    }
+}
